@@ -543,6 +543,13 @@ nav a:hover, nav a.active {
   transition: transform var(--transition-smooth);
 }
 
+.hero-illustration svg {
+  width: 100%;
+  height: auto;
+  max-width: 340px;
+  display: block;
+}
+
 .hero-visual:hover .hero-illustration {
   transform: scale(1.05) rotate(2deg);
 }
@@ -1982,5 +1989,171 @@ footer {
     width: calc(100% - 32px);
     right: 16px;
     bottom: 84px; /* Position above mobile sticky bar */
+  }
+}
+
+/* Very Small Mobile Screen Adjustments (max-width: 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .hero {
+    padding-top: calc(var(--header-height) + 20px);
+    padding-bottom: 40px;
+  }
+
+  .hero-title {
+    font-size: 2.15rem;
+    letter-spacing: -1px;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-visual {
+    height: 320px;
+  }
+
+  .hero-image-wrapper {
+    height: 280px;
+    width: 280px;
+  }
+
+  .hero-illustration svg {
+    max-width: 240px;
+  }
+
+  .floating-card {
+    padding: 10px;
+  }
+
+  .fc-1 {
+    top: 5%;
+    left: -5px;
+    transform: scale(0.85);
+  }
+
+  .fc-1:hover {
+    transform: scale(0.9) translateY(-4px);
+  }
+
+  .fc-2 {
+    bottom: 5%;
+    right: -5px;
+    width: 170px;
+    transform: scale(0.85);
+  }
+
+  .fc-2:hover {
+    transform: scale(0.9) translateY(-4px);
+  }
+
+  .section-padding {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .booking-body {
+    padding: 16px;
+  }
+
+  .booking-footer {
+    padding: 16px;
+  }
+
+  .booking-header {
+    padding: 24px 16px;
+  }
+
+  .step-question {
+    font-size: 1.35rem;
+    margin-bottom: 20px;
+  }
+
+  .device-grid {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 12px;
+  }
+
+  .device-select-card {
+    padding: 16px 8px;
+    gap: 12px;
+  }
+
+  .device-card-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.25rem;
+  }
+
+  .device-card-label {
+    font-size: 0.85rem;
+  }
+
+  .subtype-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subtype-card {
+    padding: 14px 16px;
+    font-size: 0.9rem;
+  }
+
+  .brands-grid {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 12px;
+  }
+
+  .brand-select-card {
+    padding: 16px 8px;
+    font-size: 0.9rem;
+  }
+
+  .issue-checkbox-label {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+
+  .slots-container {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    padding: 0 16px;
+  }
+
+  .quote-text {
+    font-size: 1.15rem;
+  }
+
+  .faq-question {
+    padding: 16px 20px;
+    font-size: 0.95rem;
+  }
+
+  .faq-answer {
+    padding: 0 20px;
+  }
+
+  .faq-item.active .faq-answer {
+    padding-bottom: 16px;
+  }
+
+  .footer-cta-title {
+    font-size: 2rem;
+  }
+
+  .footer-cta-desc {
+    font-size: 1rem;
+    margin-bottom: 24px;
+  }
+
+  .marquee-content {
+    gap: 40px;
   }
 }
